@@ -5,7 +5,7 @@ dotenv.config();
 require('./config/database.cjs')
 
 const { createTweet, getTweets, updateTweet, deleteTweet } = require('./controllers/tweets.cjs')
-const { createUser } = require('./controllers/users.cjs')
+const { createUser } = require('./controllers/user.cjs')
 
 const app = express();
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(express.json());
 
 // C
 app.post('/tweets', createTweet)
-app.post("/users", createUser)
+app.post("/user", createUser)
 // R
 app.get('/tweets', getTweets)
 

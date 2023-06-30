@@ -34,7 +34,7 @@ function App() {
     <>
     <h1>My Twitter Clone</h1>
     <nav>
-      <Link to="/">Home</Link>
+      <Link to="/">Home</Link><br />
       <Link to="/signup">SignUp</Link>
     </nav>
     {/* PAGES HERE */}
